@@ -129,13 +129,13 @@ public class Qes1_13 {
         //「好きな食べ物はオムライスです」
 		System.out.println("好きな食べ物は"+ tab +"です");
 		//BMIは22.6です
-		double sbmi =  tai / ((sin / 100) * (sin / 100));
+		double sBmi =  tai / ((sin / 100) * (sin / 100));
 		  //10倍する
-        sbmi = sbmi * 10;
+        sBmi = sBmi * 10;
           //Math.roundメソッドで四捨五入する
-        double safter = Math.round(sbmi);
+        double sAfter = Math.round(sBmi);
           //取得した値をdouble型にキャストして10で割る
-		System.out.println("BMIは" + ((double)safter/10) + "です");
+		System.out.println("BMIは" + ((double)sAfter/10) + "です");
 		
 		/*9
 		 * 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
@@ -157,13 +157,13 @@ public class Qes1_13 {
         //「好きな食べ物はオムライスです」
 		System.out.println("好きな食べ物は"+ tab +"です");
 		//BMIはBMIは11.31ですです
-		double newsbmi =  tai / ((sin / 100) * (sin / 100));
+		double newBmi =  tai / ((sin / 100) * (sin / 100));
 		  //10倍する
-        newsbmi = newsbmi * 10;
+        newBmi = newBmi * 10;
           //Math.roundメソッドで四捨五入する
-        double newsafter = Math.round(newsbmi);
+        double newAfter = Math.round(newBmi);
           //取得した値をdouble型にキャストして10で割る
-		System.out.println("BMIは" + ((double)newsafter/10) + "です");
+		System.out.println("BMIは" + ((double)newAfter/10) + "です");
 	
 		
 		/*10
