@@ -35,12 +35,12 @@ public class Lion {
 		this.cm = cm;
 	}
 	// speedの値を取り出すためのメソッド（getterメソッド）
-	public int getSpead() {
+	public int getSpeed() {
 		return this.speed;
 	}
 	// speedに値を代入するためのメソッド（setterメソッド）を定義(引数を受け取る)
-	public void setSpead(int spead) {
-		this.speed = spead;
+	public void setSpeed(int speed) {
+		this.speed = speed;
 	}
 
 	public static void main(String[] args) {
@@ -50,12 +50,12 @@ public class Lion {
 		// set〇〇に引数として値を代入する
 		l.setAnimal ("ライオン");
 		l.setCm(2.1f);
-		l.setSpead(80);
+		l.setSpeed(80);
 
 		// コンソールに出力する
-		System.out.println("動物名：" + l.animal);
-		System.out.println("体長：" + l.cm + "m");
-		System.out.println("速度" + l.speed + "km/h");
+		System.out.println("動物名：" + l.getAnimal());
+		System.out.println("体長：" + l.getCm() + "m");
+		System.out.println("速度：" + l.getSpeed() + "km/h");
 	}
 
 }
