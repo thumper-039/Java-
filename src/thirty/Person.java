@@ -1,4 +1,3 @@
-
 package thirty;
 
 // BigDecimalを使うためにインポート（誤差が出ないように正確に計算するため）
