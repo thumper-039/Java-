@@ -1,5 +1,8 @@
 package thirty_two;
 
+import thirty_three.Bicycle;
+import thirty_three.Car;
+
 public class Person {
 
 	public static int count = 0;
@@ -40,6 +43,22 @@ public class Person {
 
 	public String lastName() {
 		return this.lastName;
+	}
+
+	// 問題6：Personクラスにインスタンスメソッド「buy」を定義しましょう。（仮引数：car）
+	public void buy (Car car) {
+		// 問題7：buyメソッドの中でsetOwnerメソッドとthisを用いてownerフィールドの値をセットしましょう。
+		// setOwnerに受け取った名前を代入
+		car.setOwner(this.fullName());
+		// 問題8：さらに、「〇〇が購入しました」と出力する処理を追加してください。
+		// getterで値を受け取る
+		System.out.println(car.getOwner() + "が購入しました");
+	}
+	// 問題9：引数の型が異なるbuyメソッドを定義しましょう。（仮引数：bicycle）
+	public void buy (Bicycle bicycle) {
+		bicycle.setOwner(this.fullName());
+		System.out.println(bicycle.getOwner() + "が購入しました");
+
 	}
 
 }
